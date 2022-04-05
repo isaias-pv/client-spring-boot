@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/client.js"></script>
+    
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>Cliente - Info</title>
+    
+<body>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12 border-right border-left">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Perfil</h4>
+                        <button class="btn btn-primary profile-button" type="button" id="btnRegresar">Regresar</button>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4"><label class="labels">Cliente ID</label><input type="text" class="form-control" id="idClient"></div>
+                        <div class="col-md-4"><label class="labels">Documento</label><input type="text" id="document" class="form-control" placeholder="100020220202" value=""></div>
+                        <div class="col-md-4"><label class="labels">Tipo de Documento</label><input type="text" id="typeDocument" class="form-control" value="" placeholder="CC"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Nombres</label><input type="text" id="name" class="form-control" placeholder="Jon" value=""></div>
+                        <div class="col-md-6"><label class="labels">Apellidos</label><input type="text" id="lastName" class="form-control" value="" placeholder="Doe"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Dirección</label><input type="text" id="direction" class="form-control" placeholder="kr 2332 # 212 - 22" value=""></div>
+                        <div class="col-md-6"><label class="labels">Email</label><input type="text" id="email" class="form-control" value="" placeholder="doejoe@email.com"></div>
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+                    <button class="btn btn-primary profile-button" type="button" id="btnEditar">Editar</button>
+                    <button class="btn btn-danger profile-button" type="button" id="btnEliminar">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
