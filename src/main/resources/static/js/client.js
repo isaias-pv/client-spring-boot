@@ -63,7 +63,7 @@ document.addEventListener('click', (e) => {
 
     if(e.target.id == 'btnEliminar') deleteInfo();
     
-    if(e.target.id == 'btnRegresar') deleteInfo();
+    if(e.target.id == 'btnRegresar') location = '/';
 });
 
 
